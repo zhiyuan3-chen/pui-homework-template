@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Page Title</title>
+    <link rel="stylesheet" href = "css/hw1.css">
+  </head>
+
+  <body>
+    <main>
+      <header>
+        <a href="./Gallery.html">
+          <img id = "logo" alt = "logo" src = "../assets/logo/logo-01.svg">
+        </a>
+        <hr id = "nav-divider">
+      </header>
+
+      <nav>
+        <div class = "nav-container">
+          <a href = "./Gallery.html" class = "nav">
+            PRODUCTS
+          </a>
+        </div>
+        <br>
+        <div class = "nav-container">
+          <a href = "./Cart.html" class = "nav">
+            CART
+          </a>
+        </div>
+      </nav>
+
+      <article>
+        <h1>Original cinnamon roll</h1>
+        <div class = "detail-container"> <!--This div contains several sections that have the same width. It doesn't not have a semantic meaning and it only organizes other divs and constrain the max width-->
+          
+          <section class = "image-container"> <!--This section represents the image part of the detail page-->
+            <img alt ="original-cinnamon-roll" src="../assets/products/original-cinnamon-roll.jpg">
+          </section>
+    
+          <section class = "product-description-container"> <!--This section represents the descriptive text  part of the detail page-->
+              <p>Customize our delicious, hand-made cinnamon roll to your liking!</p>
+          </section>
+    
+          <!--
+            Credit to W3Schools: HTML <select> Tag   
+            Link: https://www.w3schools.com/tags/tag_select.asp
+            I used the resource as provided in the document
+          -->
+
+          <section> <!--This section represents the option part where customer needs to take an action and choose-->
+            <div class = "option">  <!--Option1, glaizng-->
+              <label for="glazing">Glazing:</label>
+              <select name="galzing">
+                <option value="keep-original">Keep original</option>
+                <option value="sugar-milk">Sugar milk</option>
+                <option value="vanilla-milk">Vanilla milk</option>
+                <option value="double-chocolate">Double chocolate</option>
+              </select>
+            </div>
+      
+            <div class = "option"> <!--Option2, pack size-->
+              <label for="pack-size">Pack Size:</label>
+              <select name="pack-size">
+                <option value="keep-original">1</option>
+                <option value="sugar-milk">3</option>
+                <option value="vanilla-milk">6</option>
+                <option value="double-chocolate">12</option>
+              </select>
+            </div>
+          </section>
+        
+          <section class = "price-addtocart"> <!--This section represents the price and the checkout button. They are horizontally centered so I grouped them together-->
+              <div class = "detail-price">
+                  <p>$ 2.49</p>
+              </div>
+              <div class ="button">
+                  <p>Add to cart</p>
+              </div>
+          </section>
+        </div>
+      </article>
+    </main>
+  </body>
+</html>
