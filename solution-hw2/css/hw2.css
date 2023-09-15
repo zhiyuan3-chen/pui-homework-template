@@ -125,7 +125,7 @@ select {
     margin:auto;
 }
 
-.button:hover{
+.addtocart-button:hover{
     background-color: yellow;
 }
 
@@ -199,6 +199,10 @@ select {
     margin-left:935px;
     margin-top:50px;
     margin-bottom:50px;
+}
+
+.checkout-button:hover{
+    background-color: yellow;
 }
 
 
