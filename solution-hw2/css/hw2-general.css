@@ -1,28 +1,34 @@
-p{
+/*General text style*/
+p{ 
     margin-top:0;
     margin-bottom:0;
 }
 
+/*border for the body content*/
 body{
     border:1px solid black;
     margin:10px;
 } 
 
+/*border for the body content*/
 .heading-title{
     font-size:36px;
     font-weight:normal;
     margin-top:80px;
 }
 
+/*to put the body content in the center*/
 .body-content{
     display: flex;
     justify-content: center;
 }
 
+/*This is to put what's right to the logo take all the rest of the space*/
 .heading{
     flex:1;
 }
 
+/*This is group the nav bar, the line, and headeing vertically*/
 .page-header{
     display:flex;
     justify-content: space-between;
@@ -33,6 +39,7 @@ body{
     margin:30px;
 }
 
+/*This flexbox contains cart and product and group them horizontally*/
 nav{
     display: flex;
     justify-content: flex-end;
