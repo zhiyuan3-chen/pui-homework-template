@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Page Title</title>
+    <link rel="stylesheet" href = "css/hw2.css">
+    <link rel="stylesheet" href = "css/hw2-general.css">
+  </head>
+
+  <body>
+    <main>
+      <header class = "page-header"> 
+        <div> <!--This div is created to contain the logo and put it into a flexbox-->
+          <a href="./Gallery.html">
+            <img id = "logo" alt = "logo" src = "../assets/logo/logo-01.svg">
+          </a>
+        </div>
+        <div class = "heading"> <!-- The heading div represents what's to the right of the logo, also the right part of the flexbox-->
+          <nav> 
+            <div class = "nav-container">
+              <a href = "./Gallery.html" class = "nav">
+                PRODUCTS
+              </a>
+            </div>
+            <div class = "nav-container">
+              <a href = "./Cart.html" class = "nav">
+                CART
+              </a>
+            </div>
+          </nav>
+          <hr id = "nav-divider">
+          <p class = "heading-title">Original cinnamon roll</p> 
+        </div>
+      </header>
+
+      <article>
+        <section class = "detail-container"> <!--This section puts the image and all other text and actions horizontally next to each other-->
+          <div class = "image-container"> <!--This div represents the image part of the detail page-->
+            <img alt ="original-cinnamon-roll" src="../assets/products/original-cinnamon-roll.jpg">
+          </div>
+          
+          <div class = "description-action-container"> <!--This is the flexbox to vertically group text, choices, and add-to-cart action-->
+            <div class = "product-detail"> <!--This div represents the descriptive text part of the detail page-->
+              <p>Customize our delicious, hand-made cinnamon roll to your liking!</p>
+            </div>
+    
+          <!--
+            Credit to W3Schools: HTML <select> Tag   
+            Link: https://www.w3schools.com/tags/tag_select.asp
+            I used the resource as provided in the document
+          -->
+          <div> <!--This div represents the option part where customer needs to take an action and choose-->
+            <div class = "option">  <!--Option1, glaizng-->
+              <label for="glazing">Glazing:</label>
+              <select name="galzing">
+                <option value="keep-original">Keep original</option>
+                <option value="sugar-milk">Sugar milk</option>
+                <option value="vanilla-milk">Vanilla milk</option>
+                <option value="double-chocolate">Double chocolate</option>
+              </select>
+            </div>
+      
+            <div class = "option"> <!--Option2, pack size-->
+              <label for="pack-size">Pack Size:</label>
+              <select name="pack-size">
+                <option value="keep-original">1</option>
+                <option value="sugar-milk">3</option>
+                <option value="vanilla-milk">6</option>
+                <option value="double-chocolate">12</option>
+              </select>
+            </div>
+          </div>
+        
+          <div class = "price-addtocart"> <!--This div is a flexbox to put price and the checkout button next to each other -->
+              <div class = "detail-price">
+                  <p>$ 2.49</p>
+              </div>
+              <div class ="addtocart-button">
+                  <p>Add to cart</p>
+              </div>
+          </div>
+          </div>
+        </section>
+      </article>
+    </main>
+  </body>
+</html>
