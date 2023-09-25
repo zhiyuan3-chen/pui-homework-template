@@ -1,0 +1,69 @@
+/*General text style*/
+p{ 
+    margin-top:0;
+    margin-bottom:0;
+}
+
+/*border for the body content*/
+body{
+    border:1px solid black;
+    margin:10px;
+} 
+
+/*Heading/tile*/
+.heading-title{
+    font-size:36px;
+    font-weight:normal;
+    margin-top:80px;
+}
+
+/*to put the body content in the center*/
+.body-content{
+    display: flex;
+    justify-content: center;
+}
+
+/*This is to put what's right to the logo take all the rest of the space*/
+.heading{
+    flex:1;
+}
+
+/*This is group the nav bar, the line, and headeing vertically*/
+.page-header{
+    display:flex;
+    justify-content: space-between;
+}
+
+#logo{
+    width:400px;
+    margin:30px;
+}
+
+/*This flexbox contains cart and product and group them horizontally*/
+nav{
+    display: flex;
+    justify-content: flex-end;
+    margin-top:40px;
+    margin-bottom: 40px;
+
+}
+
+#nav-divider{
+    height:4px;
+    width:100%;
+    background-color: black;
+    border-width:0px;
+    
+}
+
+.nav{
+    text-decoration: none;
+    color:black;
+    font-size: 30px;
+    margin-right:80px;
+}
+
+.nav:hover{
+    background-color: yellow;
+    font-weight:bold;
+}
