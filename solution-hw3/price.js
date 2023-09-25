@@ -6,6 +6,14 @@ const glazingPrices = {
   'double-chocolate': 1.5
 };
 
+const packSizePrices = {
+  '1':1,
+  '3':3,
+  '6':5,
+  '12':10
+}
+
+
 const basePrice = 2.49; // Base product price
 let selectedGlazing = 'keep-original';
 let quantity = 1;
@@ -13,7 +21,8 @@ let quantity = 1;
 // Function to update the total price
 function updateTotalPrice() {
   const glazingPrice = glazingPrices[selectedGlazing];
-  const totalPrice = (basePrice + glazingPrice) * quantity;
+  const actualQuantity =packSizePrices[quantity];
+  const totalPrice = (basePrice + glazingPrice) * actualQuantity;
   document.getElementById('total-price').innerText = `$${totalPrice.toFixed(2)}`;
 }
 
