@@ -18,7 +18,7 @@ const basePrice = 2.49; // Base product price
 let selectedGlazing = 'keep-original';
 let quantity = 1;
 
-// Function to update the total price
+// Function to update the total price 
 function updateTotalPrice() {
   const glazingPrice = glazingPrices[selectedGlazing];
   const actualQuantity =packSizePrices[quantity];
