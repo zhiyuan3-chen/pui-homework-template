@@ -1,4 +1,4 @@
-import rolls from './rollsData.js';
+// import rolls from './rollsData.js';
 
 const glazingSelect = document.querySelector('select[name="glazing"]');
 const packSizeSelect = document.querySelector('select[name="pack-size"]');
