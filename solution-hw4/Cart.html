@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Page Title</title>
+    <link rel="stylesheet" href = "css/main.css">
+    <link rel="stylesheet" href = "css/general.css">
+  </head>
+
+  <body>
+    <main>
+      <header class = "page-header"> 
+        <div> <!--This div is created to contain the logo and put it into a flexbox-->
+          <a href="./Gallery.html">
+            <img id = "logo" alt = "logo" src = "../assets/logo/logo-01.svg">
+          </a>
+        </div>
+        <div class = "heading"> <!-- The heading div represents what's to the right of the logo, also the right part of the flexbox-->
+          <nav> 
+            <div class = "nav-container">
+              <a href = "./Gallery.html" class = "nav">
+                PRODUCTS
+              </a>
+            </div>
+            <div class = "nav-container">
+              <a href = "./Cart.html" class = "nav">
+                CART
+              </a>
+            </div>
+          </nav>
+          <hr id = "nav-divider">
+          <p class = "heading-title">Shopping Cart</p>
+        </div>
+      </header>
+
+      <article>
+        <div class ="cart-item"> <!--This div is to align the items in the cart with the logo on top-->
+          <div class = "item-info-container"> <!--item 1-->
+            <div class = "item-remove">
+              <img alt="original-cinnamon-roll" src = "../assets/products/original-cinnamon-roll.jpg">
+              <div class = "remove-button">
+                <p>Remove</p>
+              </div>
+            </div>
+
+            <div class = "item-detail">
+              <p class = "item-name">Original Cinnamon Roll</p>
+              <p class = "glazing">Glazing: Keep Original</p>
+              <p class = "size">Pack Size: 1</p>
+            </div>
+            <div class = "item-price">$ 2.49</div>
+          </div>
+          
+          <div class = "item-info-container"> <!--item 2-->
+            <div class = "item-remove">
+              <img alt="double-chocolate-cinnamon-roll" src = "../assets/products/double-chocolate-cinnamon-roll.jpg">
+              <div class = "remove-button">
+                <p>Remove</p>
+              </div>
+            </div>
+
+            <div class = "item-detail">
+                <p class = "item-name">Double Chocolate Cinnamon Roll</p>
+                <p class = "glazing">Glazing: Sugar Milk</p>
+                <p class = "size">Pack Size: 6</p>
+            </div>
+            <div class = "item-price">$ 27.45</div>
+          </div>
+        </div>
+          
+          <hr id = "checkout-divider">  <!--the black divider-->
+  
+          <div class = "total-price-container"> <!--This div is a flexbox to group Total and the actually price horizontally-->
+            <div class = "total-text">
+              <p>Total</p>
+            </div>
+            <div class = "price-text">
+              <p>$ 29.94</p>
+            </div>
+          </div>
+
+          <div class = "checkout-button">
+              <p>Checkout</p>
+          </div>
+      </article>
+    </main>
+  </body>
+</html>
