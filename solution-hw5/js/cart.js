@@ -12,17 +12,18 @@ class Roll {
 // Create a set to hold the items in the cart
 const cart = new Set();
 
+
 // Items to be added to the cart
 const newItems = [
     new Roll('Original', 'Sugar milk', 1, rolls['Original'].basePrice),
     new Roll('Walnut', 'Vanilla milk', 12, rolls['Walnut'].basePrice),
     new Roll('Raisin', 'Sugar milk', 3, rolls['Raisin'].basePrice),
-    new Roll('Apple', 'Original', 3, rolls['Apple'].basePrice)
+    new Roll('Apple', 'Keep original', 3, rolls['Apple'].basePrice)
 ];
 
-// Function to add a Roll instance to the cart
-function addToCart(roll) {
-    cart.add(roll);
+// Add items to the cart
+for (const item of newItems) {
+    cart.add(item);
 }
 
 // Function to calculate the total price of all items in the cart
@@ -82,11 +83,6 @@ function displayCart() {
     totalPriceElement.textContent = `$ ${totalCartPrice}`;
 }
 
-// Add items to the cart
-for (const item of newItems) {
-    addToCart(item);
-}
-
-// Display items in the cart on the shopping cart page
+// Display items in the cart on the cart page
 displayCart();
 

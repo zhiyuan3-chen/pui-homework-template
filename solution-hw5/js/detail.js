@@ -29,20 +29,7 @@ populateGlazingOptions();
 populatePackSizeOptions();
 
 
-// Prices for different glazing options
-const glazingPrices = {
-    'Keep original': 0,
-    'Sugar milk': 0,
-    'Vanilla milk': 0.5,
-    'Double chocolate': 1.5
-  };
-  
-  const packSizePrices = {
-    '1':1,
-    '3':3,
-    '6':5,
-    '12':10
-  }
+
   
   //get rollsData.js
   const queryString = window.location.search;
@@ -118,3 +105,6 @@ function newRolls() {
 
 const addToCartButton = document.querySelector('.addtocart-button');
 addToCartButton.addEventListener('click', newRolls);
+
+
+
