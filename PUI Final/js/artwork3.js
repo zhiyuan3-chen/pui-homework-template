@@ -1,0 +1,1 @@
+sessionStorage.setItem('previousPage', 'artwork3.html');

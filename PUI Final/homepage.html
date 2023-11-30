@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Random Rotating Rectangle Drawer</title>
+  <link rel="stylesheet" href = "css/homepage.css">
+  <link rel="stylesheet" href = "css/general.css">
+  <link href='https://fonts.googleapis.com/css?family=Inria Serif' rel='stylesheet'>
+  <script type="text/javascript" src="js/homepage.js" defer></script>
+</head>
+
+<body>
+  <div id="canvas">
+    <canvas id="myCanvas"></canvas>
+  </div>
+
+  <div id="heading">
+    <p>Kazimir Malevich Art Journey</p>
+  </div>
+
+  <div id="portrait">
+    <img alt = "Malevich Portrait" src = "./image/portrait.png">
+  </div>
+
+  <div id="menu">
+    <div class = "menuItems">
+        <div class = "circle" id="blackCircle"></div>
+        <div class="menuText" onclick="window.location.href='biography.html';">
+            <p>Discover Kazimir Malevich</p>
+            <img src="./image/nextarrow.png" alt="Next Arrow" class="nextArrow">
+        </div>
+    </div>
+    <div class = "menuItems" onclick="window.location.href='canvas.html';"">
+        <div class = "circle" id="blueCircle"></div>
+        <div class="menuText">
+            <p>Create Your Own Malevich Art</p>
+            <img src="./image/nextarrow.png" alt="Next Arrow" class="nextArrow">
+        </div>
+    </div>
+  </div>
+</body>
+</html>
