@@ -9,10 +9,10 @@
 
 #heading{
   color:white;
-  font-size: 90px;
+  font-size: 6.2rem;
   position:absolute;
   z-index:2;
-  width:800px;
+
   margin-top:50px;
   margin-left:120px;
   line-height: 1;
@@ -71,7 +71,7 @@
 }
 
 .menuText{
-  font-size:60px;
+  font-size:3.7rem;
   color: white;
   width:468px;
   position: relative;
