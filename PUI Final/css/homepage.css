@@ -9,10 +9,10 @@
 
 #heading{
   color:white;
-  font-size: 6.2rem;
+  font-size: 10rem;
   position:absolute;
   z-index:2;
-
+  width:800px;
   margin-top:50px;
   margin-left:120px;
   line-height: 1;
