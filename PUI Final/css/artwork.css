@@ -1,19 +1,42 @@
-.paintingandName{
-    max-width:500px;
-    position:absolute;
-    display:flex;
-    flex-direction: column;
-    align-items:center;
-    margin-top:160px;
-    margin-left:150px;
+@media only screen and (min-width: 1197px) {
+    .paintingandName{
+        max-width:500px;
+        position:absolute;
+        display:flex;
+        flex-direction: column;
+        align-items:center;
+        margin-top:160px;
+        margin-left:150px;
+    }
+    
+    #blackSquare{
+        width:100%;
+    }
+    
+    #name{
+        padding-top:30px;
+        font-style: italic;
+    }
 }
 
-#blackSquare{
-    width:100%;
+@media only screen and (max-width: 1196px) {
+    .paintingandName{
+        max-width:400px;
+        position:absolute;
+        display:flex;
+        flex-direction: column;
+        align-items:center;
+        margin-top:140px;
+        margin-left:120px;
+    }
+    
+    #blackSquare{
+        width:100%;
+    }
+    #name{
+        padding-top:20px;
+    }
+    
 }
 
-#name{
-    padding-top:30px;
-    font-style: italic;
-}
 

@@ -22,7 +22,7 @@ body, html {
   z-index: 10000;
 }
 
-#clearButton, #saveButton{
+#clearButton, #saveButton, #undoButton{
   max-width:120px;
   margin-left:20px;
   cursor: pointer;
@@ -33,6 +33,10 @@ body, html {
 }
 
 #clearButton:hover{
+  transform: scale(1.05);
+}
+
+#undoButton:hover{
   transform: scale(1.05);
 }
 
@@ -67,8 +71,3 @@ body, html {
 }
 
 
-#undoButton{
-  position:absolute;
-  width:200px;
-  margin-left:0px;
-}

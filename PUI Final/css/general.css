@@ -15,13 +15,7 @@ p{
     font-weight: 400;
 }
 
-#nextButton{
-    position:absolute;
-    width:120px;
-    margin-top:520px;
-    margin-right:4px;
-    cursor: pointer;
-}
+
 
 #nextButton:hover{
     transform: scale(1.05);
@@ -54,8 +48,34 @@ p{
 }
 
 
-.title{
-    font-weight:bold;
-    font-size:84px;
-    margin-bottom:30px;
+
+
+@media only screen and (min-width: 1197px){
+    .title{
+        font-weight:bold;
+        font-size:84px;
+        margin-bottom:30px;
+    }
+    #nextButton{
+        position:absolute;
+        width:120px;
+        margin-top:520px;
+        margin-right:4px;
+        cursor: pointer;
+    }
+}
+
+@media only screen and (max-width: 1196px){
+    .title{
+        font-weight:bold;
+        font-size:64px;
+        margin-bottom:24px;
+    }
+    #nextButton{
+        position:absolute;
+        width:120px;
+        margin-top:420px;
+        margin-right:4px;
+        cursor: pointer;
+    }
 }

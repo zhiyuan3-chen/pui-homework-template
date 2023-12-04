@@ -1,5 +1,3 @@
-
-
 #canvas {
   position: absolute;
   width: 100%;
@@ -7,88 +5,177 @@
   overflow: hidden;
 }
 
-#heading{
-  color:white;
-  font-size: 10rem;
-  position:absolute;
-  z-index:2;
-  width:800px;
-  margin-top:50px;
-  margin-left:120px;
-  line-height: 1;
+@media only screen and (min-width: 1197px) {
+  #heading{
+    color:white;
+    font-size: 90px;
+    position:absolute;
+    z-index:2;
+    width:800px;
+    margin-top:50px;
+    margin-left:120px;
+    line-height: 1;
+  }
+  
+  #portrait{
+    position:absolute;
+    z-index:1;
+    margin-top:120px;
+    margin-left:-100px;
+  }
+  
+  #portrait img{
+    width:960px;
+  }
+  
+  #menu{
+    display:flex;
+    flex-direction:column;
+    margin-left: 1000px;
+    margin-top: 250px;
+  }
+  
+  .menuItems{
+    margin-bottom: 60px;
+    cursor: pointer;
+  }
+  
+  .circle {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    z-index:1;
+  }
+  
+  #blackCircle {
+    background-color: rgb(17, 3, 11);
+  }
+  
+  #blueCircle {
+    background-color: rgb(30, 23, 71);
+  }
+  
+  .circle::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../image/texture.png');
+    background-size: cover;
+    opacity: 0.4;
+    border-radius: 50%;
+  }
+  
+  .menuText{
+    font-size:60px;
+    color: white;
+    width:468px;
+    position: relative;
+    z-index:2;
+    margin-top:-90px;
+    padding-left:50px;
+    line-height: 1;
+  }
+  
+  .menueText:hover{
+    font-size:64px;
+  }
+  
+  .nextArrow {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
 }
 
-#portrait{
-  position:absolute;
-  z-index:1;
-  margin-top:120px;
-  margin-left:-100px;
-}
-
-#portrait img{
-  width:960px;
-}
-
-#menu{
-  display:flex;
-  flex-direction:column;
-  margin-left: 1000px;
-  margin-top: 250px;
-}
-
-.menuItems{
-  margin-bottom: 60px;
-}
-
-.circle {
-  position: relative;
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  overflow: hidden;
-  z-index:1;
-}
-
-#blackCircle {
-  background-color: rgb(17, 3, 11);
-}
-
-#blueCircle {
-  background-color: rgb(30, 23, 71);
-}
-
-.circle::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: url('../image/texture.png');
-  background-size: cover;
-  opacity: 0.4;
-  border-radius: 50%;
-}
-
-.menuText{
-  font-size:3.7rem;
-  color: white;
-  width:468px;
-  position: relative;
-  z-index:2;
-  margin-top:-90px;
-  padding-left:50px;
-  line-height: 1;
-  cursor: pointer;
-}
-
-.menuText:hover{
-  transform: scale(1.03);
-}
-
-.nextArrow {
-  position: absolute;
-  bottom: 0;
-  right: 0;
+@media only screen and (max-width: 1196px){
+  #heading{
+    color:white;
+    font-size: 70px;
+    position:absolute;
+    z-index:2;
+    width:640px;
+    margin-top:40px;
+    margin-left:80px;
+    line-height: 1;
+  }
+  
+  #portrait{
+    position:absolute;
+    z-index:1;
+    margin-top:120px;
+    margin-left:-100px;
+  }
+  
+  #portrait img{
+    width:720px;
+  }
+  
+  #menu{
+    display:flex;
+    flex-direction:column;
+    margin-left: 640px;
+    margin-top: 200px;
+  }
+  
+  .menuItems{
+    margin-bottom: 40px;
+    cursor: pointer;
+  }
+  
+  .circle {
+    position: relative;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    overflow: hidden;
+    z-index:1;
+  }
+  
+  #blackCircle {
+    background-color: rgb(17, 3, 11);
+  }
+  
+  #blueCircle {
+    background-color: rgb(30, 23, 71);
+  }
+  
+  .circle::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../image/texture.png');
+    background-size: cover;
+    opacity: 0.4;
+    border-radius: 50%;
+  }
+  
+  .menuText{
+    font-size:48px;
+    color: white;
+    width:380px;
+    position: relative;
+    z-index:2;
+    margin-top:-72px;
+    padding-left:40px;
+    line-height: 1;
+  }
+  
+  .menueText:hover{
+    font-size:50px;
+  }
+  
+  .nextArrow {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
 }
 
