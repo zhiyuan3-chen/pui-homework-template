@@ -1,25 +1,3 @@
-// saveButton.addEventListener('click', function() {
-//   // create a canvas
-//   const canvas2 = document.createElement('canvas');
-//   const context = canvas2.getContext('2d');
-
-//   // set canvas size to the current window size
-//   canvas2.width = window.innerWidth;
-//   canvas2.height = window.innerHeight;
-
-//   // use html2canvas library
-//   html2canvas(document.body, { useCORS: true }).then(function(canvas2) {
-//     // make canvas a picture of choice
-//     const dataURL = canvas2.toDataURL("image/png");
-
-//     // create a download link
-//     const link = document.createElement('a');
-//     link.href = dataURL;
-//     link.download = 'Malevich.png'; 
-//     link.click();
-//   });
-// });
-
 document.addEventListener('DOMContentLoaded', function() {
   // Retrieve information about the previous page from session storage
   const previousPage = sessionStorage.getItem('previousPage');
@@ -200,18 +178,18 @@ document.addEventListener('DOMContentLoaded', function() {
   let previousRotation = null;
 
   function getRandomRotation() {
-      const randomNumber = Math.random();
-    
-      if (previousRotation === null || randomNumber < 0.3) {
-        // 30% chance or first rotation, or reset to one of 0, 90, 180, 270, 360
-        const rotationOptions = [0, 90, 180, 270, 360];
-        previousRotation = rotationOptions[Math.floor(Math.random() * rotationOptions.length)];
-      } else {
-        // 70% chance for random rotation other than previous rotation
-        previousRotation = Math.floor(Math.random() * 360);
-      }
-    
-      return previousRotation;
+    const randomNumber = Math.random();
+  
+    if (previousRotation === null || randomNumber < 0.3) {
+      // 30% chance or first rotation, or reset to one of 0, 90, 180, 270, 360
+      const rotationOptions = [0, 90, 180, 270, 360];
+      previousRotation = rotationOptions[Math.floor(Math.random() * rotationOptions.length)];
+    } else {
+      // 70% chance for random rotation other than previous rotation
+      previousRotation = Math.floor(Math.random() * 360);
+    }
+  
+    return previousRotation;
     }
 
 

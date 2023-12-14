@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Canvas</title>
+  <link rel="stylesheet" href = "../css/canvas.css">
+  <link rel="stylesheet" href = "../css/general.css">
+  <script type="text/javascript" src="../js/canvas.js" defer></script>
+  <script src="https://html2canvas.hertzen.com/dist/html2canvas.js"></script> <!--html2canvas library-->
+</head>
+
+<body>
+  <img src="../image/image 13.png" alt="arrow back button" class = "buttontobeRemoved" id="backButton">
+  <img src="../image/Union.png" alt="home button" class = "buttontobeRemoved" id="homeButton" onclick="window.location.href='homepage.html';">
+  <div id="canvas">
+    <canvas id="myCanvas"></canvas>
+  </div>
+
+  <div class="button">
+    <img src="../image/Group 10.png" alt="undo button" class = "buttontobeRemoved" id = "undoButton"/>
+    <img onclick="location.reload();"  src="../image/Group 4.png" alt="clear button"  class = "buttontobeRemoved" id = "clearButton"/>
+    <img src="../image/Group 3.png" alt="save button" class = "buttontobeRemoved" id = "saveButton"/>
+  </div>
+  <div id="instruction">
+    <p>Click anywhere on the canvas to generate your drawings</p>
+  </div>
+</body>
+</html>

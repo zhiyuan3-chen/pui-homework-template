@@ -1,1 +1,1 @@
-sessionStorage.setItem('previousPage', 'homepage.html');
+sessionStorage.setItem('previousPage', 'homepage.html'); //store data in the browser's session storage.

@@ -81,8 +81,8 @@
     line-height: 1;
   }
   
-  .menueText:hover{
-    font-size:64px;
+  .menuText:hover{
+    transform: scale(1.05);
   }
   
   .nextArrow {
@@ -102,6 +102,7 @@
     margin-top:40px;
     margin-left:80px;
     line-height: 1;
+    background-color: rgba(0,0,0,0);
   }
   
   #portrait{
@@ -168,8 +169,8 @@
     line-height: 1;
   }
   
-  .menueText:hover{
-    font-size:50px;
+  .menuText:hover{
+    transform: scale(1.05);
   }
   
   .nextArrow {
